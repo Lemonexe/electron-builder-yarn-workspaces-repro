@@ -1,4 +1,15 @@
 {
-  "name": "electron-builder-externals-repro",
-  "packageManager": "yarn@4.7.0"
+  "name": "externals-repro",
+  "version": "1.0.0",
+  "description": "Externals repro",
+  "license": "MIT",
+  "packageManager": "yarn@4.7.0",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "build": "yarn workspace @packages/app run build"
+  }
 }

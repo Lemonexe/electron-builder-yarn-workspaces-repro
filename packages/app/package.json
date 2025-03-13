@@ -1,0 +1,17 @@
+{
+  "name": "@packages/app",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "author": "N/A",
+  "description": "Externals repro (App workspace)",
+  "scripts": {
+    "build": "electron-builder --publish never"
+  },
+  "devDependencies": {
+    "electron": "35.0.1",
+    "electron-builder": "26.0.11"
+  },
+  "dependencies": {
+    "is-odd": "^3.0.1"
+  }
+}

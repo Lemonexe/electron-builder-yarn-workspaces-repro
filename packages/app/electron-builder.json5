@@ -1,0 +1,35 @@
+/**
+ * @see https://www.electron.build/configuration/configuration
+ */
+{
+  "appId": "Externals-repro",
+  "asar": true,
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "src/**"
+  ],
+  "mac": {
+    "artifactName": "${productName}.${ext}",
+    "target": ["dmg", "zip" ]
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64" ]
+      }
+    ],
+    "artifactName": "${productName}.${ext}"
+  },
+  "linux": {
+    "target": ["AppImage" ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "deleteAppDataOnUninstall": false
+  }
+}
